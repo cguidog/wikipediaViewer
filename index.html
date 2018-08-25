@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+      <h1>Wikipedia Viewer</h1>
+      <div id="random">
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="blank">Random Read?</a>
+      </div>
+    <div id="search">
+      <input type="text" id="searchTerm" onKeydown="Javascript: if (event.keyCode==13) search()" placeholder="Search" >
+      <button id="searchButton">Search</button>
+    </div>
+    <ul id="results" target="_blank"></ul>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+  </body>
+
+</html>
